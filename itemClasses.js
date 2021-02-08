@@ -13,11 +13,11 @@ class Item {
         return items;
     }
     static find(name) {
-        const specificItem = items.find(item => item.name === name);
+        const specificItem = items.find((item) => item.name === name);
         return specificItem;
     }
     static update(name, data) {
-        const specificItem = Item.name(name);
+        const specificItem = items.find((item) => item.name === name);
         specificItem.name = data.name;
         specificItem.price = data.price;
         return specificItem;

@@ -11,7 +11,7 @@ beforeEach(function () {
 });
 
 afterEach(function () {
-    items = [];
+    items.length = 0;
 });
 
 
